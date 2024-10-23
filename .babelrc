@@ -1,0 +1,11 @@
+// O arquivo .babelrc é uma configuração para o Babel,
+// uma ferramenta que transpila código JavaScript moderno 
+//(como ES6, ES7 e JSX) para uma versão compatível com navegadores
+// mais antigos. Ele permite que você use as últimas 
+//funcionalidades do JavaScript sem se preocupar com a 
+//compatibilidade.
+
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+  
