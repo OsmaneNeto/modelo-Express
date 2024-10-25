@@ -32,13 +32,14 @@ app.get('/estudantes', (req, res)=>{
 });
 
 app.listen(PORT, ()=>{
-    console.log(`Porta: ${PORT}`);
+    console.log(`http://localhost:${PORT}`);
+    
 });
 
 // Middleware para servir arquivos estáticos da pasta 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Rota para servir o index.html
+// Rota para servir o index
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'components', 'App'));
   });
